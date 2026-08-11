@@ -1,9 +1,9 @@
 # _LEAD_TEMPLATE
 
 Başlık: Lead Detay Dosyası Şablonu
-Versiyon: 1.0
+Versiyon: 1.1
 Oluşturan: Claude Code
-Son Güncelleme: 2026-08-11
+Son Güncelleme: 2026-08-12
 Durum: ACTIVE NOW
 Onaylayan: Furkan
 
@@ -46,6 +46,7 @@ CONTACT_PERSON:
 PROPOSAL_DATE:
 LAST_FOLLOWUP_DATE:
 EXPECTED_RESPONSE_DATE:
+SERVICE(S): (bkz. STANDARDS/SERVICE_CATALOG.md — teklif taslağı buradaki SERVICE_ID/SCOPE/DELIVERABLES/STANDARD_PRICE alanlarından üretilir; Sales/CRM Agent katalogdaki fiyatı/maliyeti/marjı değiştiremez, katalog dışı özel fiyat/indirim STANDARDS/APPROVAL_GATES.md onayı gerektirir)
 
 ## Görüşme Kaydı (her görüşme için yeni bir alt başlık eklenir)
 
