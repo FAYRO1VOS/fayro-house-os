@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fayro Intake / Command Console — V1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">FAYRO <span>COMMAND CONSOLE</span></div>
+  <div class="badge-v1">V1 — Prototip / DEMO</div>
+</header>
+
+<main class="layout">
+
+  <!-- TEK GİRİŞ EKRANI -->
+  <section class="intake-panel" aria-label="Tek giriş ekranı">
+    <h1>Ne oldu, ne yapılacak?</h1>
+    <p class="hint">Aklına ne geliyorsa yaz ya da söyle. Sistem hangi işe ait olduğunu önerir.</p>
+
+    <div class="intake-box">
+      <textarea id="rawInput" placeholder="Örn: Çağlayan cuma konseri için çekim planı hazırlansın." rows="3"></textarea>
+      <div class="intake-actions">
+        <button id="micBtn" class="icon-btn" title="Sesle gir">🎤</button>
+        <button id="submitBtn" class="primary-btn">Gönder</button>
+      </div>
+      <div id="voiceStatus" class="voice-status"></div>
+    </div>
+
+    <div id="suggestionBox" class="suggestion-box hidden">
+      <!-- İçerik app.js -> renderPreview() tarafından dinamik olarak dolduruluyor
+           (multi-intent kartları: her iş için ayrı Düzenle/Onayla/Vazgeç). -->
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard" aria-label="Ana dashboard">
+    <div class="dash-grid" id="dashGrid">
+      <div class="dash-card" data-view="today">
+        <h3>Today</h3>
+        <div class="dash-count" id="count-today">0</div>
+      </div>
+      <div class="dash-card" data-view="approval">
+        <h3>Needs Approval</h3>
+        <div class="dash-count" id="count-approval">0</div>
+      </div>
+      <div class="dash-card" data-view="blocked">
+        <h3>Blocked</h3>
+        <div class="dash-count" id="count-blocked">0</div>
+      </div>
+      <div class="dash-card" data-view="money">
+        <h3>Money</h3>
+        <div class="dash-count" id="count-money">0</div>
+      </div>
+      <div class="dash-card" data-view="content">
+        <h3>Content</h3>
+        <div class="dash-count" id="count-content">0</div>
+      </div>
+      <div class="dash-card" data-view="leads">
+        <h3>Leads</h3>
+        <div class="dash-count" id="count-leads">0</div>
+      </div>
+    </div>
+
+    <div class="dash-detail" id="dashDetail">
+      <p class="empty-hint">Bir kart seç — o kategorideki kayıtları burada gör.</p>
+    </div>
+  </section>
+
+  <!-- WORKSPACES -->
+  <section class="workspaces" aria-label="Çalışma alanları">
+    <h2>Çalışma Alanları</h2>
+    <div class="ws-tabs" id="wsTabs"></div>
+    <div class="ws-views" id="wsViews"></div>
+  </section>
+
+  <!-- AUDIT TRAIL -->
+  <section class="audit" aria-label="Kayıt geçmişi">
+    <h2>Tüm Girdiler (Audit Trail)</h2>
+    <div id="auditList" class="audit-list"></div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
