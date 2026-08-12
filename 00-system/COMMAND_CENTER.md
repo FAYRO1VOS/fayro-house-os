@@ -5,6 +5,24 @@ CEO yalnızca özet satırları okur. COO tüm bölümü detaylı takip eder.
 
 Her blokta "Kaynak:" notu, o bölümün hangi Source of Truth dosyasından okunacağını gösterir — buraya elle ikinci bir kopya yazılmaz, ilgili dosyaya bakılıp özetlenir (çift veri girişini önlemek için).
 
+## FURKAN WAR ROOM (P0 Revenue & Brand Launch — Furkan'ın açılışta göreceği tek blok, aşağıdaki detaylı bölümlerin özetidir, ikinci SoT değildir)
+
+**PARA** (Kaynak: `PIPELINE_BOARD.md` STATUS:PROPOSAL, `RECEIVABLES_BOARD.md`)
+- Yeni fırsatlar / gönderilecek teklifler / follow-up / tahsilatlar:
+
+**ACİL MÜŞTERİ** (Kaynak: `03-clients/Caglayan-Topaloglu/`, `03-clients/Now-Yasam-Saglik/`)
+- Çağlayan Topaloğlu:
+- NOW Yaşam Sağlık:
+
+**CONTENT** (Kaynak: ilgili müşterinin `content/CONTENT_BOARD.md`)
+- Çekilecek / editlenecek / onay bekleyen / bugün yayınlanacak:
+
+**FURKAN BRAND** (Kaynak: `04-marketing-ads/fayro-brand/FURKAN_PERSONAL_BRAND.md`, `04-marketing-ads/content/content-calendar/CONTENT_BOARD.md`)
+- Bugün üretilecek içerik / portföye eklenecek iş / paylaşılacak sonuç:
+
+**BLOCKER** (Kaynak: ilgili STATUS/APPROVAL_GATES alanları)
+- Furkan onayı / müşteri onayı / eksik dosya / beklenen ödeme / ekip problemi bekleyenler:
+
 ## TODAY
 - Yapılacak işler (bugün DUE_DATE): bkz. `01-operations/tasks/{ready,in-progress}/`
 - Geciken işler (DUE_DATE geçmiş): bkz. `01-operations/tasks/`
@@ -15,7 +33,7 @@ Her blokta "Kaynak:" notu, o bölümün hangi Source of Truth dosyasından okuna
 - Bugünkü editler (STATUS: EDITING): bkz. `03-clients/<isim>/content/CONTENT_BOARD.md`
 - Müşteri onayı bekleyenler (STATUS: CLIENT_REVIEW): bkz. `03-clients/<isim>/content/CONTENT_BOARD.md`
 - Bugün yayınlanacak içerikler (PUBLISH_DATE bugün): bkz. `03-clients/<isim>/content/CONTENT_BOARD.md`
-- Aktif reklamlar: bkz. `04-marketing-ads/advertising` (CAMPAIGN_SCHEMA tanımlı; ayrı kampanya board'u ilk gerçek kampanyada açılacak, henüz yok)
+- Aktif reklamlar: bkz. `04-marketing-ads/advertising/CAMPAIGN_BOARD.md`
 - Kritik uyarılar (P0, 24 saat otomatik eskalasyon): bkz. `STANDARDS/PRIORITY_STANDARD.md`
 - Bugünkü toplantılar:
 - Bugünkü teslimler:
